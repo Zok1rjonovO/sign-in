@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Olimjon Zokirjonov -->
+    <!-- 02.20.2005 -->
+    <!-- Najot ta'lim oquvchisi -->
+    <!-- web-developer-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-in</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./sign_up.css">
 </head>
 <body>
-    
     <section>
         
+        
         <span></span>
         <span></span>
         <span></span>
@@ -79,35 +83,41 @@
         <span></span>
         
         
-        
-        <!-- Olimjon Zokirjonov -->
-        <!-- 02.20.2005 -->
-        <!-- Najot ta'lim oquvchisi -->
-        <!-- web-developer-->
         
         <div class="signin">
             <div class="content">
-                <h2>Sign in</h2>
-                <form action="">
+                <h1>Sign Up</h1>
+                <form class="" id="forms">
                     <div class="inputbox">
-                        <input type="text" required>
+                        <input name="userName" id="userName" type="text" minlength="3" maxlength="15" required>
                         <i>Username</i>
                     </div>
                     <div class="inputbox">
-                        <input type="password" required>
-                        <i>password</i>
-                    </div>
-                    <div class="links">
-                        <a href="#">Forgot password</a>
-                        <a href="./sign_up.html">Sign up</a>
+                        <input  name="userSecondName" id="userSecondName" type="text" minlength="3" maxlength="20" required>
+                        <i>User Second Name</i>
                     </div>
                     <div class="inputbox">
-                        <input type="submit" value="login">
+                        <input  name="UserEmail" id="UserEmail" type="email" required>
+                        <i>Enter your email</i>
                     </div>
+                    <div class="inputbox">
+                        <input  name="UserPassword" id="UserPassword" type="password" minlength="8" required>
+                        <i>UserPassword</i>
+                    </div>
+                    <div class="inputbox">
+                        <input  name="UserConfPass" id="UserConfPass" type="password" minlength="8" required>
+                        <i>UserConfPass</i> 
+                    </div>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <ul id="box" class="" style="background-color: aliceblue;">
+        
+    </ul>
+
+    <script src="./script.js"></script>
 </body>
 </html>
