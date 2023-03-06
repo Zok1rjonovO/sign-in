@@ -49,6 +49,14 @@ section::before{
     }
 }
 
+#form{
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    top: 0;
+    left: 0;
+}
+
 section span{
     position: relative;
     display: block;
@@ -134,21 +142,6 @@ form{
     color: #fff;
 }
 
-.links{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.links a{
-    color: #fff;
-}
-
-.links a:last-child{
-    color: #FF00BF;
-    font-weight: 600;
-}
 
 button[type="submit"]{
     padding: 10px;
