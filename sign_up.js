@@ -27,14 +27,6 @@ $elForm.addEventListener("submit", function (evt) {
     $elUserConfPass.value = null;
   }
   
-  // $elBox.innerHTML += `
-  // <li style="width: 300px;">
-  // <p>User First Name: ${name}</p>
-  // <p>User Second Name: ${secondName}</p>
-  // <p>User Email: ${Email}</p>
-  // <p>User Password: ${Password}</p>
-  // </li>
-  // `;
   
   $elUserName.value = null;
   $elUserSecondName.value = null;
@@ -44,13 +36,11 @@ $elForm.addEventListener("submit", function (evt) {
 });
 
 let form = document.querySelector("#form") 
-let elBody = document.querySelector("body") 
 let elScetion = document.querySelector("section")
-let elScetionh = document.querySelector("section span:hover")
-let elScetionb = document.querySelector("section::before")
+let elSpan = document.querySelector(".span")
 let elContent = document.querySelector(".content h1")
 let elbtn = document.querySelector("button[type=submit]")
-
+let allElements = document.querySelectorAll("*");
 
 
 form.addEventListener("change" , evt => {
@@ -58,10 +48,14 @@ form.addEventListener("change" , evt => {
   console.log(evt.target.name);
   
   if(evt.target.name == "bgColor"){
-    elScetion.style.background = evt.target.value
     elContent.style.color = evt.target.value
     elbtn.style.background = evt.target.value
-    elScetionh.style.background = evt.target.value
-
   }
+
+  allElements.forEach((evt) => {
+    elSpan.classList.add("orange");
+    elSpan.classList.remove("span");
+    elScetion.classList.add("orange__background");
+    elScetion.classList.remove("section");
+  });
 })

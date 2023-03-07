@@ -52,12 +52,12 @@ section::before{
 #form{
     position: absolute;
     z-index: 10;
-    width: 100px;
+    padding: 0 128px;
+    max-width: 100%;
     top: 0;
-    left: 0;
 }
 
-section span{
+#span{
     position: relative;
     display: block;
     width: 128px;

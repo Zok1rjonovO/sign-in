@@ -44,8 +44,7 @@ $elForm.addEventListener("submit", function (evt) {
 });
 
 let form = document.querySelector("#form") 
-let elBody = document.querySelector("body") 
-let elScetionb = document.querySelector("section::before")
+let elScetion = document.querySelector("section")
 let elContent = document.querySelector(".content h1")
 let elbtn = document.querySelector("button[type=submit]")
 
@@ -55,8 +54,8 @@ form.addEventListener("change" , evt => {
   console.log(evt.target.name);
   
   if(evt.target.name == "bgColor"){
-    elContent.style.color = evt.target.value
-    elScetionb.style.background = evt.target.value
+    elScetion.style.background = evt.target.value
+    elContent.style.background = evt.target.value
     elbtn.style.background = evt.target.value
   }
 })
